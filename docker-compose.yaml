@@ -1,0 +1,7 @@
+services:
+  lint:
+    image: sqlfluff/sqlfluff:latest
+    volumes:
+      - type: bind
+        source: ./sql/
+        target: /sql/
